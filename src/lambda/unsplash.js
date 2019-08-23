@@ -1,9 +1,8 @@
 const axios = require('axios')
-const config = require('../../config')
 
 exports.handler = (event, context, callback) => {
   const apiRoot = "https://api.unsplash.com"
-  const accessKey = process.env.ACCESS_KEY || config.accessKey
+  const accessKey = process.env.ACCESS_KEY
 
   const doggoEndpoint = `${apiRoot}/photos/random?client_id=${accessKey}&count=${10}&collections='3816141,1154337,1254279'`
 
