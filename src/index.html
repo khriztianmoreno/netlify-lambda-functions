@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Netlify Functions Examples</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Mono" rel="stylesheet">
+  <link href="./normalize.css" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Netlify Functions Examples 🚀</h1>
+  <p>
+    Hi there! This is a playground to test out
+    <a href="https://www.netlify.com/docs/functions">Netlify’s Lambda Functions</a>.
+  </p>
+  <p>
+    You can browse the code for this site on
+    <a href="https://github.com/khriztianmoreno/netlify-lambda-functions">GitHub</a>,
+    or play around with the code yourself
+    <a
+      href="https://app.netlify.com/start/deploy?repository=https://github.com/khriztianmoreno/netlify-lambda-functions">
+      deploying a copy to Netlify</a>.
+  </p>
+
+  <article>
+    <h2>Hello, World!</h2>
+    <p>The inevitable Hello World example.</p>
+    <pre class="language-js"><code><%= require('html-loader!./lambda/hello.js') %></code></pre>
+    <h3>Try it out</h3>
+    <p><a href="/.netlify/functions/hello">Hello</a></p>
+  </article>
+
+  <article>
+    <h2>Random Emoji 🧪</h2>
+    <p>Generating random emoji.</p>
+    <pre class="language-js"><code><%= require('html-loader!./lambda/emoji.js') %></code></pre>
+    <h3>Try it out</h3>
+    <p><a href="/.netlify/functions/emoji">Emoji</a></p>
+  </article>
+
+  <article>
+    <h2>List 🐶 photos</h2>
+    <p>Generating list dog photos.</p>
+    <p>
+      For this gallery, we will query a free Unsplash API to obtain super cute images of dogs and display them in a
+      masonry.
+      Head to Unsplash, signup to <a href="https://unsplash.com/developers" target="_blank">create a new app and get an
+        access key</a>.
+    </p>
+    <pre class="language-js"><code><%= require('html-loader!./lambda/dog.js') %></code></pre>
+    <h3>Try it out</h3>
+    <p><a href="/.netlify/functions/dog">List 🐶photos</a></p>
+  </article>
+
+  <h2>👨🏼‍💻 Developed by <a href="https://khriztianmoreno.dev" target="_blank" rel="noopener noreferrer">khriztianmoreno</a></h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.14.0/prism.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

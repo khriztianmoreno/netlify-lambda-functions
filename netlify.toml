@@ -1,3 +1,4 @@
 [build]
-  Functions = "lambda"
-  Command = "npm run build:lambda"
+  Functions = "dist/server"
+  Command = "npm run build"
+  Publish = "dist/client"
