@@ -28,7 +28,7 @@
   "devDependencies": {
     "babel-loader": "8.0.6",
     "concurrently": "4.1.2",
-    "dotenv": "5.0.1",
+    "dotenv": "8.1.0",
     "extract-loader": "2.0.1",
     "file-loader": "1.1.11",
     "html-loader": "0.5.5",
