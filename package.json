@@ -26,7 +26,7 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "babel-loader": "8.0.6",
+    "babel-loader": "8.1.0",
     "concurrently": "5.1.0",
     "dotenv": "8.2.0",
     "extract-loader": "4.0.3",
