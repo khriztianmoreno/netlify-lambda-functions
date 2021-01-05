@@ -20,7 +20,7 @@
   "author": "Cristian Moreno <khriztianmoreno@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "netlify-lambda": "^2.0.0",
     "node-emoji": "^1.10.0",
     "normalize.css": "^8.0.1"
